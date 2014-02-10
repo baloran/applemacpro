@@ -1,7 +1,4 @@
 @import 'compass';
-@import 'compass/reset';
-@import 'grid';
-@import 'fluid';
 
 /*************************************************
 
@@ -11,7 +8,16 @@
 
 *****************************************************/
 
-
-body{
+html,body{
 	background-color: black;
+	height:100%;
+}
+
+.navbar{
+	color:white;
+	background-color: rgba(255,255,255,0.1);
+}
+
+.container-full,.box{
+	height:100%;
 }
