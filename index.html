@@ -4,8 +4,45 @@
 	<meta charset="UTF-8">
 	<title>Mac Pro</title>
 	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/skeleton.css">
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/layout.css">
 </head>
 <body>
+	<div class="container">
+  
+  <!-- Give column value in word form (one, two..., twelve) -->
+  <div class="sixteen columns">
+    <h1>Full Width Column</h1>
+  </div>
+  
+  <!-- Sweet nested columns cleared with a clearfix class -->
+  <div class="six columns clearfix">
+    <!-- In nested columns give the first column a class of alpha
+    and the second a class of omega -->
+    <div class="three columns alpha">...</div>
+    <div class="three columns omega">...</div>
+  </div>
+ 
+  <!-- Sweet nested columns cleared by wrapping a .row -->
+  <div class="five columns">
+    <div class="row">
+      <div class="three columns alpha">...</div>
+      <div class="two columns omega">...</div>
+    </div>
+  </div>
+ 
+  <!-- Sweet nested columns cleared by <br class="clear"> -->
+  <div class="five columns">
+    <div class="three columns alpha">...</div>
+    <div class="two columns omega">...</div>
+    <br class="clear" />
+  </div>
+ 
+  <!-- Can push over by columns -->
+  <div class="five columns offset-by-one"></div>
+ 
+</div>
 	<script src="js/zepto.min.js"></script>
 	<script src="js/app.js"></script>
 </body>
