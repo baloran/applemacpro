@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Mac Pro</title>
+		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/styles.css">
+		<link rel="stylesheet" href="css/slides.css">
+		<script src="js/jquery.min.js"></script>
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+		<script src="http://getbootstrap.com/assets/js/html5shiv.js"></script>
+		<script src="http://getbootstrap.com/assets/js/respond.min.js"></script>
+		<![endif]-->
+ 
+		<style> /*Nique sa mère le WafenSaSS*/
+        #toolbar {height:10%;width:100%;background-color:brown;position:fixed;top:0px;opacity:0.5;}
+        #slide1 {height:100%;width:100%;background-color:black;display:block;}
+        #slide2 { height: 400%;  background-color:black; display:block;}
+        #leftdiv {height:25%;width:50%;background-color:black;display:inline-block;  text-align: center;padding-top:10%;}   
+        #rightdiv {height:100%;width:50%;background-color:blue;display:inline-block;float:right;} 
+        .rdcontent {width:80%;margin:auto;height:80px;font-size:40px;text-align:center;}
+        .txtjump {margin-top:70%;}
+        #slide3 {height:100%;width:100%;background-color:yellow;display:block;}
+		</style>
+	</head>
+	<body>
+		<div class="container-full">
+			
+			<div class="navbar navbar-default">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#">MacPro</a>
+				</div>
+				<ul class="nav navbar-nav pull-right">
+					<li class="active"><a href="#">Presentation</a></li>
+					<li><a href="#">Performances</a></li>
+					<li><a href="#">Buy</a></li>
+				</ul>
+			</div>
+			
+             <div id="slide1">
+
+           <!--div id="toolbar">
+              <span id="scrollvl">Scroll: </span> - <span id="divheight">Div height: </span>-<span id="winheight">Windows height : </span>-<span id="docheight">Document height : </span>-<span id="currentheight">Current Height:</span>
+           </div-->
+
+            </div>
+        
+
+        <div id="slide2">
+        <div id="leftdiv"><img src="http://img1.gtsstatic.com/mac-pro/le-nouveau-mac-pro-d-apple-detourne-en-plateau-de-sushis_126965_w460.jpg" style=""margin:auto;/></div>
+        <div id="rightdiv" class="rdcontent">
+        <p style="margin-top:25%">TEXT 1</p>
+        <p class="txtjump">TEXT 2</p>
+        <p class="txtjump">TEXT 3</p>
+        <p class="txtjump">TEXT 4</p>
+        <p class="txtjump">TEXT 5</p>
+        </div>
+        </div>
+
+
+        
+        <div id="slide3"></div>
+
+<script type="text/javascript" language="javascript">
+         
+$( window ).scroll(function() {
+var $window = $(window);   
+var curheight=$window.height() + $window.scrollTop();
+
+$("#scrollvl").html($window.scrollTop()); 
+$("#divheight").html($("#slide2").height()); 
+$("#winheight").html($window.height()); 
+$("#docheight").html($(document).height()); 
+$("#currentheight").html(curheight); 
+
+if (curheight>1764 &&  curheight<4410 ) 
+
+{ 
+
+ $("#leftdiv").css( "position", "fixed" );
+  $("#leftdiv").css( "left", "0" );
+   $("#leftdiv").css( "top", "0%" );
+  $("#leftdiv").css( "height", "100%" );
+  $("#leftdiv").css( "padding-top", "10%" );
+
+
+
+}
+
+else
+
+{
+$("#leftdiv").css( "position", "static" );
+$("#leftdiv").css( "height", "25%" );
+
+
+}
+
+
+
+
+});
+
+
+
+
+    </script>
+			
+			</div> <!-- /container full -->
+			
+
+			
+			<script src="js/ResponsiveSlides.js"></script>
+		</body>
+	</html>

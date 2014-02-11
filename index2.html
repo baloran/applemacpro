@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Mac Pro</title>
+		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/styles.css">
+		<link rel="stylesheet" href="css/slides.css">
+		<link href='http://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
+		<script src="js/jquery.min.js"></script>
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+		<script src="http://getbootstrap.com/assets/js/html5shiv.js"></script>
+		<script src="http://getbootstrap.com/assets/js/respond.min.js"></script>
+		<![endif]-->
+
+ 
+		<style> /*Nique sa mère le WafenSaSS*/
+        #toolbar {height:10%;width:100%;background-color:brown;position:fixed;top:0px;opacity:0.5;}
+        #slide1 {height:100%;width:100%;background-color:grey;display:block;position:absolute;top:0%;}
+        #slide2 { height: 400%;  background-color:black; display:block;position:absolute;top:100%;}
+        #leftdiv {height:25%;width:50%;background-color:black;display:inline-block;padding-top:10%;}   
+        #rightdiv {height:100%;width:50%;background-color:black;display:inline-block;float:right;} 
+        .rdcontent {border-left:1px solid #fff; margin:auto;height:80px;font-size:20px;text-align:center;font-family: 'Roboto', sans-serif;color:#B9B9B9;}    #descrblock {margin:auto;width:70%;}
+        .descr {border:1px solid red;height:80px;text-align:center;font-family: 'Roboto', sans-serif;color:#B9B9B9;}
+        .txtjump {margin-top:70%;}  .descrtitle {font-size:50px;margin-bottom:30px;} 
+        #imgunder ,#imgover {  position:absolute;top:5%;left:13%;opacity:1;width:300px;height:410px;}
+        
+        #slide3 {height:100%;width:100%;background-color:yellow;display:block;position:absolute;top:500%;}
+		</style>
+	</head>
+	<body>
+		<div class="container-full">
+			<div class="navbar navbar-default">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#">MacPro</a>
+				</div>
+				<ul class="nav navbar-nav pull-right">
+					<li class="active"><a href="#">Presentation</a></li>
+					<li><a href="#">Performances</a></li>
+					<li><a href="#">Buy</a></li>
+				</ul>
+			</div>
+			<div id="slide1">
+
+           <!--div id="toolbar">
+              <span id="scrollvl">Scroll: </span> - <span id="divheight">Div height: </span>-<span id="winheight">Windows height : </span>-<span id="docheight">Document height : </span>-<span id="currentheight">Current Height:</span>
+           </div-->
+
+            </div>
+        
+
+        <div id="slide2">
+        <div id="leftdiv"><img id="imgunder" src="img/open.png"/><img id="imgover"  src="img/close.png"/></div>
+        <div id="rightdiv" class="rdcontent">
+<div id="descrblock">
+<div style="margin-top:45%">
+<h1 class="descrtitle">La puissance restructurée.</h1>
+<p>Deux processeurs graphiques, stockage flash PCI-e, processeurs Xeon dernière génération, mémoire ultra-rapide, prise en charge de la vidéo 4K et technologie Thunderbolt 2. Le nouveau Mac Pro a tout ce qu’il faut pour offrir des performances hors normes sur toute la ligne. </p>
+</div>
+
+<div class="txtjump">
+<h1 class="descrtitle">Processeur.</h1>
+<p>Le nouveau Mac Pro est équipé du tout dernier processeur Intel Xeon E5 intégrant 4, 6, 8 ou 12 cœurs sur un seul die. Résultat : sa puissance est tout bonnement monstrueuse. Avec 40 Go/s de bande passante PCI Express de troisième génération, jusqu’à 30 Mo de mémoire cache N3 et des instructions en virgule flottante de 256 bits, il va presque trop vite pour vous. </p>
+</div>
+
+<div class="txtjump">
+<h1 class="descrtitle">Mémoire.</h1>
+<p>Chaque composant du nouveau Mac Pro est taillé pour la performance. Le contrôleur mémoire DDR3 à quatre canaux, cadencé à 1 866 MHz, n’échappe pas à la règle. Avec jusqu’à 64 Go de mémoire et une bande passante pouvant atteindre 60 Go/s, toutes les tâches deviennent faciles, y compris celles exigeant une grande puissance de calcul. Et comme la mémoire du Mac Pro est une mémoire de type ECC, les erreurs intermittentes de mémoire n’affecteront pas le rendu, l’exportation vidéo ou la simulation. </p>
+</div>
+
+<div class="txtjump">
+<h1 class="descrtitle">Graphismes</h1>
+<p>Habituellement, les ordinateurs professionnels tirent l’essentiel de leur puissance de calcul du processeur central. Mais la puissance des processeurs graphiques a augmenté de façon spectaculaire, et les développeurs de logiciels n’ont pas tardé à exploiter ce potentiel dans leurs apps. C’est pourquoi nous avons vu très loin au moment de concevoir cet ordinateur et mis au point une architecture graphique nettement plus performante. Pas un, mais deux processeurs graphiques professionnels AMD FirePro, pouvant embarquer 2, 3 ou 6 Go de VRAM dédiée chacun et jusqu’à 2 048 processeurs de flux. Avec une telle puissance de feu, vous pourrez monter des vidéos 4K pleine résolution de façon fluide tout en traitant des effets de rendu en arrière-plan. Vous disposerez aussi d’assez d’énergie pour connecter jusqu’à trois écrans 4K haute définition.
+</p>
+</div>
+</div>
+        
+        </div>
+        </div>
+
+
+        
+        <div id="slide3"></div>
+
+
+
+<script type="text/javascript" language="javascript">
+         
+$( window ).scroll(function() {
+var $window = $(window);   
+var curheight=$window.height() + $window.scrollTop();
+var fourth=$window.height()*2;
+var disapear=$window.height()*2.3;
+var total=$window.height()*5;
+
+
+$("#scrollvl").html($window.scrollTop()); 
+$("#divheight").html($("#slide2").height()); 
+$("#winheight").html($window.height()); 
+$("#docheight").html($(document).height()); 
+$("#currentheight").html(curheight); 
+
+
+
+
+if (curheight>fourth &&  curheight<total ) 
+
+{ 
+
+ $("#leftdiv").css( "position", "fixed" );
+  $("#leftdiv").css( "left", "0" );
+   $("#leftdiv").css( "top", "0%" );
+  $("#leftdiv").css( "height", "100%" );
+  $("#leftdiv").css( "padding-top", "10%" );
+
+  if (curheight>disapear ) { $( "#imgover").animate({ opacity: 0, top: "-100px" }, 'slow');  }
+
+
+  $("#imgunder").css( "left", "26%" );
+  $("#imgunder").css( "top", "20%" );
+
+
+  $("#imgover").css( "left", "26%" );
+  $("#imgover").css( "top", "20%" );
+
+}
+
+else 
+
+{
+$("#leftdiv").css( "position", "static" );
+$("#leftdiv").css( "height", "25%" );
+
+  $("#imgunder").css( "left", "13%" );
+  $("#imgunder").css( "top", "5%" );
+
+
+  $("#imgover").css( "left", "13%" );
+  $("#imgover").css( "top", "5%" );
+
+}
+
+
+
+
+});
+
+
+
+
+    </script>
+			
+			</div> <!-- /container full -->
+			
+
+			
+		</body>
+	</html>
